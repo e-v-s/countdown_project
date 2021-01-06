@@ -3,24 +3,20 @@ import React from 'react';
 function Countdown(props) {
   return (
 		<>
-			<div>
-				{props.timeLeft.day}
-				<p>Days</p>
-			</div>
-			<div>
-				{props.timeLeft.hours}
-				<p>Hours</p>
-			</div>
-			<div>
-				{props.timeLeft.minutes}
-				<p>Minutes</p>	
-			</div>
-			<div>
-				{props.timeLeft.seconds}
-				<p>Seconds</p>
-			</div>
+		{
+			Object.keys(props.timeLeft).map(key => {
+				return (
+					<div className={props.card}>
+						{
+							props.timeLeft[key].toString().length === 2 ? <div className={props.number}>{props.timeLeft[key]}</div> : <div className={props.number}>0{props.timeLeft[key]}</div>
+						}
+						<p className={props.text}>{key}</p>
+					</div>
+				)
+			})
+		}
 		</>
 	)
 }
-
+	
 export default Countdown;

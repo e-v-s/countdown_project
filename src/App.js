@@ -12,12 +12,12 @@ import instaIcon from './images/icon-instagram.svg';
 function App() {
   const calculateTimeLeft = () => {
     let today = new Date();
-    let day = 20 - today.getDate();
+    let days = 20 - today.getDate();
     let hours = 24 - today.getHours();
     let minutes = 60 - today.getMinutes();
     let seconds = 60 - today.getSeconds();
     let timeLeft = {
-      day, 
+      days, 
       hours, 
       minutes, 
       seconds
@@ -42,28 +42,28 @@ function App() {
       {
         timeLeft.day === 0 ? 
         <p>é hoje</p> : 
-        <Countdown timeLeft={timeLeft} />
+        <Countdown timeLeft={timeLeft} card={css(style.card)} text={css(style.text)} number={css(style.number)} />
       }
       </div>
       <div className={css(style.footer)}>
         <div className={css(style.footerIcons)}>
           <a 
             className={css(style.link)} 
-            href="#" 
+            href="www.facebook.com" 
             target="_blank" 
             rel="noreferrer">
             <img className={css(style.icon)} alt="facebook link" src={fbIcon} />
           </a>
           <a 
             className={css(style.link)} 
-            href="#" 
+            href="www.pinterest.com" 
             target="_blank" 
             rel="noreferrer">
             <img className={css(style.icon)} alt="pinterest link" src={pinterestIcon}></img>
           </a>
           <a 
             className={css(style.link)} 
-            href="#" 
+            href="instagram" 
             target="_blank" 
             rel="noreferrer">
             <img className={css(style.icon)} alt="instagram link" src={instaIcon}></img>
@@ -71,7 +71,7 @@ function App() {
         </div>
         <div className={css(style.attribution)}>
           Challenge by <a className={css(style.link)} href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>. 
-          Coded by <a className={css(style.link)} href="#">Evs</a>.
+          Coded by <a className={css(style.link)} href="www.github.com/e-v-s">Evs</a>.
         </div>
       </div>
     </div>
@@ -107,6 +107,45 @@ const style = StyleSheet.create({
   countdown: {
     display: 'flex',
     justifyContent: 'space-around',
+  },
+  card: {
+    backgroundColor: 'transparent',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '80px',
+    ':before,': {
+      content: `"."`,
+      fontSize: '24px',
+      color: 'white'
+    }
+  },
+  number: {
+    width: '80px',
+    height: '70px',
+    textAlign: 'center',
+    color: 'hsl(345, 95%, 68%)',
+    fontFamily: `'Red Hat Text', sans-serif`,
+    fontSize: '42px',
+    fontWeight: '700',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    border: '1px solid transparent',
+    borderCollapse: 'separate',
+    background: 'linear-gradient(180deg, hsl(236, 21%, 20%) 50%, hsl(236, 21%, 26%) 50%)',
+    borderRadius: '4px',
+    '-webkit-box-shadow': '0px 4px 0px 0px hsl(234, 17%, 12%)',
+    
+  },
+  text: {
+    fontFamily: `'Red Hat Text', sans-serif`,
+    textTransform: 'uppercase',
+    fontWeight: '700',
+    fontSize: '8px',
+    color: 'hsl(237, 18%, 59%)',
+    letterSpacing: '2px'
   },
   footer: {
     backgroundImage: `url(${backgroundFooter})`,
