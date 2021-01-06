@@ -83,7 +83,7 @@ const style = StyleSheet.create({
     backgroundImage: `url(${background})`,
     backgroundSize: 'auto 70%',
     backgroundRepeat: 'no-repeat',
-    minHeight: '100vh',
+    minHeight: '688px',
     backgroundColor: 'hsl(235, 16%, 14%)',
     display: 'flex',
     flexDirection: 'column',
@@ -93,6 +93,7 @@ const style = StyleSheet.create({
       backgroundSize: '100%',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'left bottom',
+      minHeight: '920px',
     }
   },
   title: {
@@ -106,7 +107,8 @@ const style = StyleSheet.create({
     fontSize: '24px',
     letterSpacing: '4px',
     '@media only screen and (min-width: 376px)': {
-      paddingTop: '220px'
+      paddingTop: '130px',
+      paddingBottom: '40px'
     }
   },
   countdown: {
@@ -115,7 +117,7 @@ const style = StyleSheet.create({
     '@media only screen and (min-width: 376px)': {
       width: '70%',
       margin: '0 auto',
-      marginTop: '-80px'
+      marginTop: '-40px'
     }
   },
   card: {
@@ -141,9 +143,9 @@ const style = StyleSheet.create({
     borderRadius: '4px',
     '-webkit-box-shadow': '0px 4px 0px 0px hsl(234, 17%, 12%)',
     '@media only screen and (min-width: 376px)': {
-      width: '160px',
-      height: '140px',
-      fontSize: '84px',
+      width: '124px',
+      height: '118px',
+      fontSize: '64px',
       '-webkit-box-shadow': '0px 8px 0px 0px hsl(234, 17%, 12%)'
     }
   },
@@ -175,8 +177,8 @@ const style = StyleSheet.create({
     color: 'hsl(237, 18%, 59%)',
     letterSpacing: '2px',
     '@media only screen and (min-width: 376px)': {
-      fontSize: '12px',
-      letterSpacing: '8px',
+      fontSize: '10px',
+      letterSpacing: '6px',
       paddingTop: '4px'
     }
   },
