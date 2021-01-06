@@ -42,7 +42,7 @@ function App() {
       {
         timeLeft.day === 0 ? 
         <p>é hoje</p> : 
-        <Countdown timeLeft={timeLeft} card={css(style.card)} text={css(style.text)} number={css(style.number)} />
+        <Countdown timeLeft={timeLeft} card={css(style.card)} text={css(style.text)} numbers={css(style.numbers)} number={css(style.number)} dotLeft={css(style.dotLeft)} dotRight={css(style.dotRight)} />
       }
       </div>
       <div className={css(style.footer)}>
@@ -115,29 +115,37 @@ const style = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     width: '80px',
-    ':before,': {
-      content: `"."`,
-      fontSize: '24px',
-      color: 'white'
-    }
   },
-  number: {
+  numbers: {
     width: '80px',
     height: '70px',
-    textAlign: 'center',
-    color: 'hsl(345, 95%, 68%)',
-    fontFamily: `'Red Hat Text', sans-serif`,
-    fontSize: '42px',
-    fontWeight: '700',
+    textAlign: 'center',    
+    fontSize: '42px',    
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     alignItems: 'center',
     border: '1px solid transparent',
     borderCollapse: 'separate',
     background: 'linear-gradient(180deg, hsl(236, 21%, 20%) 50%, hsl(236, 21%, 26%) 50%)',
     borderRadius: '4px',
     '-webkit-box-shadow': '0px 4px 0px 0px hsl(234, 17%, 12%)',
-    
+  },
+  number: {
+    color: 'hsl(345, 95%, 68%)',
+    fontFamily: `'Red Hat Text', sans-serif`,
+    fontWeight: '700',
+  },
+  dotLeft: {
+    marginTop: '-36px',
+    marginLeft: '-8px',
+    color: 'hsl(235, 16%, 14%)',
+    fontSize: '60px'
+  },
+  dotRight: {
+    marginTop: '-36px',
+    marginRight: '-8px',
+    color: 'hsl(235, 16%, 14%)',
+    fontSize: '60px'
   },
   text: {
     fontFamily: `'Red Hat Text', sans-serif`,
