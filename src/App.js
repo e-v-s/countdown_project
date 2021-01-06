@@ -83,14 +83,16 @@ const style = StyleSheet.create({
     backgroundImage: `url(${background})`,
     backgroundSize: 'auto 70%',
     backgroundRepeat: 'no-repeat',
-    height: '680px',
+    minHeight: '100vh',
     backgroundColor: 'hsl(235, 16%, 14%)',
     display: 'flex',
     flexDirection: 'column',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
     '@media only screen and (min-width: 376px)': {
-      width: '100%',
+      backgroundSize: '100%',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'left bottom',
     }
   },
   title: {
@@ -102,11 +104,19 @@ const style = StyleSheet.create({
     fontFamily: `'Red Hat Text', sans-serif`,
     textTransform: 'uppercase',
     fontSize: '24px',
-    letterSpacing: '4px'
+    letterSpacing: '4px',
+    '@media only screen and (min-width: 376px)': {
+      paddingTop: '220px'
+    }
   },
   countdown: {
     display: 'flex',
-    justifyContent: 'space-around',
+    justifyContent: 'space-evenly',
+    '@media only screen and (min-width: 376px)': {
+      width: '70%',
+      margin: '0 auto',
+      marginTop: '-80px'
+    }
   },
   card: {
     backgroundColor: 'transparent',
@@ -130,6 +140,12 @@ const style = StyleSheet.create({
     opacity: 'linear-gradient(180deg, 0.8, 0)',
     borderRadius: '4px',
     '-webkit-box-shadow': '0px 4px 0px 0px hsl(234, 17%, 12%)',
+    '@media only screen and (min-width: 376px)': {
+      width: '160px',
+      height: '140px',
+      fontSize: '84px',
+      '-webkit-box-shadow': '0px 8px 0px 0px hsl(234, 17%, 12%)'
+    }
   },
   number: {
     color: 'hsl(345, 95%, 68%)',
@@ -157,7 +173,12 @@ const style = StyleSheet.create({
     fontWeight: '700',
     fontSize: '8px',
     color: 'hsl(237, 18%, 59%)',
-    letterSpacing: '2px'
+    letterSpacing: '2px',
+    '@media only screen and (min-width: 376px)': {
+      fontSize: '12px',
+      letterSpacing: '8px',
+      paddingTop: '4px'
+    }
   },
   footer: {
     backgroundImage: `url(${backgroundFooter})`,
@@ -171,7 +192,7 @@ const style = StyleSheet.create({
     '@media only screen and (min-width: 376px)': {
       backgroundRepeat: 'no-repeat',
       backgroundSize: '100%',
-      width: '100%',
+      backgroundPosition: 'left top'
     }
   },
   footerIcons: {
