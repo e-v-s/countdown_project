@@ -93,7 +93,7 @@ const style = StyleSheet.create({
       backgroundSize: '100%',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'left bottom',
-      minHeight: '900px',
+      minHeight: '820px',
     }
   },
   title: {
