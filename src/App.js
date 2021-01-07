@@ -93,7 +93,7 @@ const style = StyleSheet.create({
       backgroundSize: '100%',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'left bottom',
-      minHeight: '820px',
+      minHeight: '800px',
     }
   },
   title: {
@@ -107,7 +107,7 @@ const style = StyleSheet.create({
     fontSize: '24px',
     letterSpacing: '4px',
     '@media only screen and (min-width: 376px)': {
-      paddingTop: '140px',
+      paddingTop: '166px',
       paddingBottom: '40px'
     }
   },
@@ -143,9 +143,9 @@ const style = StyleSheet.create({
     borderRadius: '4px',
     '-webkit-box-shadow': '0px 4px 0px 0px hsl(234, 17%, 12%)',
     '@media only screen and (min-width: 376px)': {
-      width: '132px',
-      height: '128px',
-      fontSize: '64px',
+      width: '142px',
+      height: '138px',
+      fontSize: '84px',
       '-webkit-box-shadow': '0px 8px 0px 0px hsl(234, 17%, 12%)'
     }
   },
@@ -158,16 +158,16 @@ const style = StyleSheet.create({
     fontWeight: '700',
   },
   dotLeft: {
-    marginTop: '-36px',
-    marginLeft: '-8px',
+    marginTop: '-44px',
+    marginLeft: '-10px',
     color: 'hsl(235, 16%, 14%)',
-    fontSize: '60px'
+    fontSize: '70px'
   },
   dotRight: {
-    marginTop: '-36px',
-    marginRight: '-8px',
+    marginTop: '-44px',
+    marginRight: '-10px',
     color: 'hsl(235, 16%, 14%)',
-    fontSize: '60px'
+    fontSize: '70px'
   },
   text: {
     fontFamily: `'Red Hat Text', sans-serif`,
