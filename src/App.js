@@ -93,7 +93,7 @@ const style = StyleSheet.create({
       backgroundSize: '100%',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'left bottom',
-      minHeight: '800px',
+      minHeight: '680px',
     }
   },
   title: {
@@ -107,7 +107,7 @@ const style = StyleSheet.create({
     fontSize: '24px',
     letterSpacing: '4px',
     '@media only screen and (min-width: 376px)': {
-      paddingTop: '220px',
+      paddingTop: '140px',
       paddingBottom: '40px'
     }
   },
