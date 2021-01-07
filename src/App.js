@@ -115,7 +115,7 @@ const style = StyleSheet.create({
     display: 'flex',
     justifyContent: 'space-evenly',
     '@media only screen and (min-width: 376px)': {
-      width: '70%',
+      width: '60%',
       margin: '0 auto',
       marginTop: '-80px'
     }
