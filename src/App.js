@@ -93,7 +93,7 @@ const style = StyleSheet.create({
       backgroundSize: '100%',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'left bottom',
-      minHeight: '680px',
+      minHeight: '900px',
     }
   },
   title: {
@@ -143,8 +143,8 @@ const style = StyleSheet.create({
     borderRadius: '4px',
     '-webkit-box-shadow': '0px 4px 0px 0px hsl(234, 17%, 12%)',
     '@media only screen and (min-width: 376px)': {
-      width: '124px',
-      height: '118px',
+      width: '132px',
+      height: '128px',
       fontSize: '64px',
       '-webkit-box-shadow': '0px 8px 0px 0px hsl(234, 17%, 12%)'
     }
