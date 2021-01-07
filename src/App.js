@@ -107,7 +107,7 @@ const style = StyleSheet.create({
     fontSize: '24px',
     letterSpacing: '4px',
     '@media only screen and (min-width: 376px)': {
-      paddingTop: '130px',
+      paddingTop: '220px',
       paddingBottom: '40px'
     }
   },
@@ -117,7 +117,7 @@ const style = StyleSheet.create({
     '@media only screen and (min-width: 376px)': {
       width: '70%',
       margin: '0 auto',
-      marginTop: '-40px'
+      marginTop: '-80px'
     }
   },
   card: {
