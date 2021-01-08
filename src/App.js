@@ -83,18 +83,18 @@ const style = StyleSheet.create({
     backgroundImage: `url(${background})`,
     backgroundSize: 'auto 70%',
     backgroundRepeat: 'no-repeat',
-    minHeight: '688px',
+    height: '100vh',
     backgroundColor: 'hsl(235, 16%, 14%)',
     display: 'flex',
     flexDirection: 'column',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
-    '@media only screen and (min-width: 376px)': {
-      backgroundSize: '100%',
+    '@media only screen and (min-width: 1100px)': {
+      backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'left bottom',
-      minHeight: '810px',
-    }
+      backgroundPosition: 'center',
+      height: '100vh'
+    },
   },
   title: {
     paddingTop: '180px',
@@ -106,18 +106,23 @@ const style = StyleSheet.create({
     textTransform: 'uppercase',
     fontSize: '24px',
     letterSpacing: '4px',
-    '@media only screen and (min-width: 376px)': {
-      paddingTop: '166px',
+    '@media only screen and (min-width: 1100px)': {
+      paddingTop: '182px',
       paddingBottom: '40px'
-    }
+    },
   },
   countdown: {
     display: 'flex',
     justifyContent: 'space-evenly',
-    '@media only screen and (min-width: 376px)': {
+    '@media only screen and (min-width: 1100px)': {
       width: '60%',
       margin: '0 auto',
-      marginTop: '-80px'
+      marginTop: '-120px'
+    },
+    '@media only screen and (max-width: 374px)': {
+      justifyContent: 'center',
+      margin: '0 auto',
+      width: '300px'
     }
   },
   card: {
@@ -142,11 +147,16 @@ const style = StyleSheet.create({
     opacity: 'linear-gradient(180deg, 0.8, 0)',
     borderRadius: '4px',
     '-webkit-box-shadow': '0px 4px 0px 0px hsl(234, 17%, 12%)',
-    '@media only screen and (min-width: 376px)': {
+    '@media only screen and (min-width: 1100px)': {
       width: '142px',
       height: '138px',
       fontSize: '84px',
       '-webkit-box-shadow': '0px 8px 0px 0px hsl(234, 17%, 12%)'
+    },
+    '@media only screen and (max-width: 374px)': {
+      width: '50px',
+      height: '40px',
+      fontSize: '28px',
     }
   },
   number: {
@@ -158,16 +168,16 @@ const style = StyleSheet.create({
     fontWeight: '700',
   },
   dotLeft: {
-    marginTop: '-44px',
-    marginLeft: '-10px',
+    marginTop: '-32px',
+    marginLeft: '-8px',
     color: 'hsl(235, 16%, 14%)',
-    fontSize: '70px'
+    fontSize: '50px'
   },
   dotRight: {
-    marginTop: '-44px',
-    marginRight: '-10px',
+    marginTop: '-32px',
+    marginRight: '-8px',
     color: 'hsl(235, 16%, 14%)',
-    fontSize: '70px'
+    fontSize: '50px'
   },
   text: {
     fontFamily: `'Red Hat Text', sans-serif`,
@@ -176,8 +186,8 @@ const style = StyleSheet.create({
     fontSize: '8px',
     color: 'hsl(237, 18%, 59%)',
     letterSpacing: '2px',
-    '@media only screen and (min-width: 376px)': {
-      fontSize: '10px',
+    '@media only screen and (min-width: 1100px)': {
+      fontSize: '14px',
       letterSpacing: '6px',
       paddingTop: '4px'
     }
@@ -185,17 +195,17 @@ const style = StyleSheet.create({
   footer: {
     backgroundImage: `url(${backgroundFooter})`,
     backgroundSize: 'auto 100%',
-    height: '180px',
+    minHeight: '180px',
     backgroundPosition: '84%',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-end',
     alignItems: 'center',
-    '@media only screen and (min-width: 376px)': {
+    '@media only screen and (min-width: 1100px)': {
       backgroundRepeat: 'no-repeat',
       backgroundSize: '100%',
       backgroundPosition: 'left top'
-    }
+    },
   },
   footerIcons: {
     display: 'flex',
@@ -214,6 +224,10 @@ const style = StyleSheet.create({
     width: '375px',
     color: 'hsl(237, 18%, 59%)',
     textAlign: 'center',
+    '@media only screen and (max-width: 374px)': {
+      width: '200px',
+      fontSize: '14px'
+    }
   },
   link: {
     color: 'hsl(237, 18%, 59%)',
